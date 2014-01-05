@@ -1,7 +1,16 @@
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
-/* always defined to indicate that i18n is enabled */
-#undef ENABLE_NLS
+/* enable compilation of debugging messages */
+#undef DEBUG
+
+/* define to enable libarchive support */
+#undef ENABLE_LIBARCHIVE
+
+/* define to enable magic */
+#undef ENABLE_MAGIC
+
+/* Have libnotify */
+#undef ENABLE_NOTIFICATION
 
 /* define to enable PackageKit installer */
 #undef ENABLE_PACKAGEKIT
@@ -9,29 +18,17 @@
 /* GetText Package */
 #undef GETTEXT_PACKAGE
 
-/* Define to 1 if you have the `bind_textdomain_codeset' function. */
-#undef HAVE_BIND_TEXTDOMAIN_CODESET
-
-/* Define to 1 if you have the `dcgettext' function. */
-#undef HAVE_DCGETTEXT
-
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #undef HAVE_DLFCN_H
-
-/* Define if the GNU gettext() function is already present or preinstalled. */
-#undef HAVE_GETTEXT
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #undef HAVE_INTTYPES_H
 
-/* Define if your <locale.h> file defines LC_MESSAGES. */
-#undef HAVE_LC_MESSAGES
+/* Define to 1 if json-glib support is included */
+#undef HAVE_JSON_GLIB
 
 /* Define to 1 if you have the `m' library (-lm). */
 #undef HAVE_LIBM
-
-/* Define to 1 if you have the <locale.h> header file. */
-#undef HAVE_LOCALE_H
 
 /* Define to 1 if you have the <memory.h> header file. */
 #undef HAVE_MEMORY_H
@@ -91,5 +88,11 @@
 /* Define to 1 if you have the ANSI C header files. */
 #undef STDC_HEADERS
 
+/* Use a session menager */
+#undef USE_SMCLIENT
+
 /* Version number of package */
 #undef VERSION
+
+/* Define if smclient is enabled */
+#undef WITH_SMCLIENT
